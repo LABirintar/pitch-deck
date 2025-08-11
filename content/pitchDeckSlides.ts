@@ -1,6 +1,6 @@
 import React from 'react';
 import { PitchDeckData, Slide } from '../types';
-import { PEDAGOGICAL_CURATORSHIP_IMAGES, SOFTWARE_IMAGES } from './assets';
+import { NETWORK_IMAGES, PEDAGOGICAL_CURATORSHIP_IMAGES, SOFTWARE_IMAGES } from './assets';
 import NetworkGraph from '../components/NetworkGraph';
 
 const ctaSlide: Slide = {
@@ -558,16 +558,8 @@ export const PITCH_DECK_DATA: PitchDeckData = {
         },
         {
           title: "Rede Autogerida",
-          text: React.createElement(
-            "div",
-            { className: "flex-grow flex flex-col" },
-            React.createElement(
-              "p",
-              { className: "mb-2 text-gray-600" },
-              "Nossa rede se expande organicamente, conectando talentos e oportunidades. Cada novo nó fortalece o todo, criando um ecossistema vivo e dinâmico."
-            ),
-            React.createElement(NetworkGraph)
-          ),
+          text: "Nossa rede se expande organicamente, conectando talentos e oportunidades. Cada novo nó fortalece o todo, criando um ecossistema vivo e dinâmico.",
+          carouselImages: NETWORK_IMAGES,
         },
         {
           title: "Plataforma de Gestão",
