@@ -1,7 +1,11 @@
-import React from 'react';
-import { PitchDeckData, Slide } from '../types';
-import { NETWORK_IMAGES, PEDAGOGICAL_CURATORSHIP_IMAGES, SOFTWARE_IMAGES } from './assets';
-import NetworkGraph from '../components/NetworkGraph';
+import React from "react";
+import { PitchDeckData, Slide } from "../types";
+import {
+  NETWORK_IMAGES,
+  PEDAGOGICAL_CURATORSHIP_IMAGES,
+  SOFTWARE_IMAGES,
+} from "./assets";
+import NetworkGraph from "../components/NetworkGraph";
 
 const ctaSlide: Slide = {
   id: "cta-final",
@@ -571,25 +575,68 @@ export const PITCH_DECK_DATA: PitchDeckData = {
     {
       id: "traction",
       layout: "traction",
+      backgroundImage:
+        "https://labirintar.github.io/governanca/pitchDeck/image/IMG_5032.jpg",
       title: React.createElement(
         React.Fragment,
         null,
-        "Nascemos no Chão da Escola.",
+        React.createElement(
+          "span",
+          { className: "text-white" },
+          "Nascemos no Chão da Escola."
+        ),
         React.createElement("br"),
-        "E já estamos ",
+        React.createElement(
+          "span",
+          { className: "text-white" },
+          "E já estamos "
+        ),
         React.createElement(
           "span",
           { className: "accent-color" },
           "tracionando."
         )
       ),
-      mainMessage:
-        "Nosso modelo foi validado no mundo real, gerando receita, impacto pedagógico e a confiança de nossos primeiros parceiros.",
+      mainMessage: React.createElement(
+        "span",
+        { className: "text-white" },
+        "Nosso modelo foi validado no mundo real, gerando receita, impacto pedagógico e a confiança de nossos primeiros parceiros."
+      ),
       stats: [
-        { value: 4, text: "Meses de validação" },
-        { value: 3, text: "Escolas atendidas" },
-        { value: 32, text: "Alunos impactados" },
-        { value: 20, prefix: "R$", suffix: "Mil+", text: "em Receita" },
+        {
+          value: 4,
+          text: React.createElement(
+            "span",
+            { className: "text-white" },
+            "Meses de validação"
+          ),
+        },
+        {
+          value: 3,
+          text: React.createElement(
+            "span",
+            { className: "text-white" },
+            "Escolas atendidas"
+          ),
+        },
+        {
+          value: 32,
+          text: React.createElement(
+            "span",
+            { className: "text-white" },
+            "Alunos impactados"
+          ),
+        },
+        {
+          value: 20,
+          prefix: "R$",
+          suffix: "Mil+",
+          text: React.createElement(
+            "span",
+            { className: "text-white" },
+            "em Receita"
+          ),
+        },
       ],
     },
     {
@@ -613,12 +660,12 @@ export const PITCH_DECK_DATA: PitchDeckData = {
             ),
             React.createElement(
               "p",
-              { className: "mb-2" },
+              { className: "mb-2 text-justify" },
               "Pedagoga. Especialista em Antropologia da Educação. Pesquisadora das Infâncias. Formadora de educadores."
             ),
             React.createElement(
               "p",
-              null,
+              { className: "text-justify" },
               "No chão da escola trabalhou junto a milhares de crianças e suas famílias."
             )
           ),
@@ -637,12 +684,12 @@ export const PITCH_DECK_DATA: PitchDeckData = {
             ),
             React.createElement(
               "p",
-              { className: "mb-2" },
+              { className: "mb-2 text-justify" },
               "Administrador e contador, especialista em Finanças e Sistemas de Informação, com certificação em Neurociências. "
             ),
             React.createElement(
               "p",
-              null,
+              { className: "text-justify" },
               "Atuou no SEBRAE em planos de negócios e viabilidade, desenvolveu sistemas de gestão inovadores e hoje é advisor em redes como Anjos do Brasil e BNI, unindo inovação e captação de recursos."
             )
           ),
@@ -661,12 +708,12 @@ export const PITCH_DECK_DATA: PitchDeckData = {
             ),
             React.createElement(
               "p",
-              { className: "mb-2" },
-              "Engenheiro de Software com experiência full-stack, atuando no desenvolvimento de produtos escaláveis e performáticos."
+              { className: "mb-2 text-justify" },
+              "Engenheiro de Software com sólida experiência no desenvolvimento de produtos escaláveis e performáticos."
             ),
             React.createElement(
               "p",
-              null,
+              { className: "text-justify" },
               "Participação ativa no Movimento Empresa Júnior, com atuação em cargos de diretoria e conselho."
             )
           ),
@@ -980,10 +1027,16 @@ export const PITCH_DECK_DATA: PitchDeckData = {
     {
       id: "school_onboarding",
       layout: "how-it-works",
+      backgroundImage:
+        "https://labirintar.github.io/governanca/pitchDeck/image/IMG_5031.jpg",
       title: React.createElement(
         React.Fragment,
         null,
-        "Implementação Líquida em ",
+        React.createElement(
+          "span",
+          { className: "text-white" },
+          "Implementação Líquida em "
+        ),
         React.createElement(
           "span",
           { className: "accent-color" },
@@ -991,7 +1044,11 @@ export const PITCH_DECK_DATA: PitchDeckData = {
         )
       ),
       mainMessage:
-        "Nosso processo de onboarding é desenhado para ser rápido, eficiente e sem custos para a escola.",
+        React.createElement(
+          "span",
+          { className: "text-white" },
+          "Nosso processo de onboarding é desenhado para ser rápido, eficiente e sem custos para a escola."
+        ),
       cards: [
         {
           icon: "🔬",
