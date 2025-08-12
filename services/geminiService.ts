@@ -2,11 +2,11 @@ import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 import { NINA_KNOWLEDGE_BASE } from '../content/ninaKnowledgeBase';
 import { NinaResponse, Source } from "../types";
 
-// if (!process.env.API_KEY) {
-//     throw new Error("API_KEY environment variable not set");
-// }
+if (!process.env.API_KEY) {
+    throw new Error("API_KEY environment variable not set");
+}
 
-const ai = new GoogleGenAI({apiKey: 'aaaaa'});
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 const ninaSystemPrompt = `Você é a Nina AI, a assistente estratégica da LABirintar. Seu nome é Nina. Sua personalidade é inspirada na fundadora, Maria Lívia: você é relacional, empática, apaixonada pela educação, mas também direta, autêntica e estratégica. Responda sempre como Nina AI.
 Sua base de conhecimento principal são os documentos estratégicos da LABirintar fornecidos abaixo. Responda às perguntas do usuário com base **prioritariamente** neste conteúdo.
