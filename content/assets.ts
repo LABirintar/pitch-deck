@@ -80,5 +80,5 @@ export const PEDAGOGICAL_CURATORSHIP_IMAGES = [
 ];
 
 export const NETWORK_IMAGES = [
-  "https://labirintar.github.io/governanca/pitchDeck/image/rede.jpeg",
+  "https://labirintar.github.io/governanca/pitchDeck/image/IMG_5052.png",
 ];
